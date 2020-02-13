@@ -22,7 +22,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    
     height: 100vh;
 }
 
@@ -45,7 +45,7 @@ p{
     flex-direction: row;
     justify-content: flex-end;
     align-items: centre;
-    padding: 10px;
+    
     height: 50px; 
 
 }
@@ -57,14 +57,14 @@ p{
     flex-direction: row;
     justify-content: flex-start;
     align-items: centre;
-    padding: 0px;
+    padding: 5px;
     height:50px;
 }
 
 #icon{
     height: 22px;
     margin-right: 50px;
-    z-index: 6;
+    
 }
 
 #menu-link{
@@ -92,6 +92,7 @@ p{
 #hero-beans{
     background-image: url("img/beans-min.jpg"); 
     background-size: cover;
+    background-attachment: fixed;
     
     position: absolute;
     z-index: 1;
@@ -101,32 +102,45 @@ p{
     
 
     width: 50%;
-    height: 1000px;
+    height: 100%;
 
 }
 
-#standard-margin-section{
+.standard-margin-section{
     padding-top: 200px;
     max-width: 960px;
     margin-right: auto;
     margin-left: auto;
+    
 }
 
-#heading-wrapper-2{
-    padding-top: 50px;
+.columns-wrapper{
+    display: flex;
     
 
 }
 
-#column-1{
-    width: 30%;
+.column{
+    max-width: 30%;
+    background-color: white;
 
 }
-#column-2{
-    width: 30%;
+
+.column-image{
+    width: 100%;
 }
-#column-3{
-    width:30%;
+
+.middle{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.column-text-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
 }
 
 
