@@ -143,4 +143,43 @@ p{
     padding: 25px;
 }
 
+.standard-margin-section{
+    padding-top: 200px;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#explicit-grid{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-gap: 5px;
+}
+
+.espresso-text-wrapper{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#cappu{
+    background-image: url(img/cappu.jpg);
+    background-size: cover;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.cappucino-text-wrapper{
+    grid-column: 3/4;
+    grid-row: 2/3;
+
+}
+
+#espre{
+    background-image: url(img/esspre.jpg);
+    background-size: cover;
+    grid-column:2/4;
+    grid-row: 1/2;
+}
+    
 
