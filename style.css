@@ -190,5 +190,33 @@ p{
     width: 100%;
     text-align: left;
 }
-    
 
+.standard-margin-section-2{
+    display: flex;
+    padding-top: 200px;
+    width: 100vw;
+}
+    
+.esp-pic{
+    background-image:url(img/esp_.jpg);
+    background-size:cover;
+    background-position:center;
+    width: 49%;
+    margin-right: 15px;
+    margin-left: 15px;
+
+
+}
+
+form{
+    width: 50%;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+input[type=text],textarea{
+    width: 100px;
+
+}
+
+    
