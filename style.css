@@ -203,20 +203,35 @@ p{
     background-position:center;
     width: 49%;
     margin-right: 15px;
-    margin-left: 15px;
+    display:flex; 
+    justify-content: center;
+    align-items: center;
 
 
 }
 
 form{
     width: 50%;
-    margin-right: 15px;
     margin-left: 15px;
+    
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    background-color: white;
 }
 
-input[type=text],textarea{
-    width: 100px;
+#contact-heading{
+    color: white;
 
 }
+
+input, textarea{
+    margin-top: 25px;
+    padding-left: 15px;
+
+    font-size: 20px;
+}
+
 
     
