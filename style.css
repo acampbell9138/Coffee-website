@@ -6,17 +6,48 @@ body{
     margin: 0px;
 }
 
-h1{
+#header-1{
     color: black;
     font-size: 75px;
     
     font-family: 'Palatino', serif;
     margin-bottom: 0px;
+
+    animation-name:"header-1";
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
 }
+
+@keyframes header-1{
+    0%{ 
+        opacity: 0%;
+        transform: translate(0, 50px);
+
+    }
+    100%{
+        opacity: 100%;
+        transform:translate(0px,-50px);
+
+    }
+
+}
+
+
+
+
+
 
 #second-header{
     color:white;
     padding-left: 75px;
+    font-family: 'Palatino', serif;
+    margin-bottom: 0px;
+    font-size: 75px;
+}
+
+@keyframes #second-header{
+
 }
 
 
