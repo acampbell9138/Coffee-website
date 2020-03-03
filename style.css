@@ -23,11 +23,11 @@ body{
 
 
 @keyframes header-1{
-    0% { 
-    transform: translate(0, -50%); opacity: 0.1;}
-    100% { 
-        transform: translate(0, 0%); opacity: 1;}
-}
+    0%{ 
+    transform: translateY(0, -50%); opacity: 0.1;}
+    100%{ 
+        transform: translateY(0, 0%); opacity: 1;}
+}   
 
 
 
@@ -37,13 +37,18 @@ body{
     font-family: 'Palatino', serif;
     margin-bottom: 0px;
     font-size: 75px;
+
+    animation-name:"second-header";
+    animation-duration: 0.6s;
+    animation-delay: 0.1s;
+    animation-timing-function: ease-out;
 }
 
 @keyframes second-header{
-    0% { 
+    0%{ 
         transform: translateY(50%); opacity: 0.1;
     }
-    100% { 
+    100%{ 
         transform: translateY(0%); opacity: 1};
     }
 
