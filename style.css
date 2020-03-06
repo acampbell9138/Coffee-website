@@ -101,7 +101,28 @@ body{
     align-items: centre;
     padding: 5px;
     height:50px;
+
 }
+#dropdown-button{
+    background-image: url(img/menu-icon.svg);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    
+}
+#dropdown-section{
+    display: block;
+    padding: 25px;;
+}
+#dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+    display: none;
+}
+
+
+
 
 #icon{
     height: 22px;
@@ -321,6 +342,10 @@ input, textarea{
     font-size: 35px;
 }
 
+#dropdown-section{
+    display:none;
+}
+
 @media screen and (max-width: 600px) {
     #hero-beans{
          top: auto;
@@ -368,4 +393,50 @@ input, textarea{
         grid-column: 1/2;
         grid-row: 4/5;
     }
+    .standard-margin-section-2{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .esp-pic{
+        background-image: none;
+
+    }
+    #contact-heading{
+        color: black;
+        text-align: right;
+        margin-bottom: 0px;
+    }
+    .form{
+        width: 80%;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .footer-link{
+        margin-left: 35px;
+    }
+    #nav-social{
+        display: none;
+    }
+    #nav-text{
+        display: none;
+    }
+    #nav-bar{
+        justify-content: flex-end;
+    }
+    #dropdown-button{
+        display: block;
+    }
+
+    #dropdown-section:hover dropdown-button{
+        display:block;
+        
+    }
+
+    .dropdown-button:hover dropdown-menu{
+        display: block;
+    }
+
 }
