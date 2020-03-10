@@ -24,9 +24,9 @@ body{
 
 @keyframes header-1{
     0%{ 
-    transform: translateY(0, -50%); opacity: 0.1;}
+    transform: translate(0, -50%); opacity: 0.1;}
     100%{ 
-        transform: translateY(0, 0%); opacity: 1;}
+        transform: translate(0, 0%); opacity: 1;}
 }   
 
 
@@ -54,7 +54,7 @@ body{
 
 
 #subtitle{
-    font-size: 14px;
+    font-size: 1em;
     width: 35%;
     text-align: right;
 }
@@ -106,19 +106,24 @@ body{
 #dropdown-button{
     background-image: url(img/menu-icon.svg);
     background-size: cover;
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 30px;
     
 }
 #dropdown-section{
-    display: block;
-    padding: 25px;;
-}
-#dropdown-menu{
     display: flex;
     flex-direction: column;
-    min-width: 160px;
+    padding: 25px;
+}
+#dropdown-menu{
     display: none;
+    flex-direction: column;
+
+    position: absolute;
+    margin-top: 30px;
+    min-width: 160px;
+    right: 0px;
+    
 }
 
 
@@ -426,17 +431,24 @@ input, textarea{
     #nav-bar{
         justify-content: flex-end;
     }
-    #dropdown-button{
+    #dropdown-section{
         display: block;
     }
 
-    #dropdown-section:hover dropdown-button{
-        display:block;
-        
+
+
+    .dropdown-button:hover #dropdown-menu{
+        display: flex;
     }
 
-    .dropdown-button:hover dropdown-menu{
-        display: block;
+    .link{
+        padding: 25px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .link:hover{
+        background-color: red;
     }
 
 }
